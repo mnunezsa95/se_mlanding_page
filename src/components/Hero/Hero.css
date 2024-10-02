@@ -1,0 +1,14 @@
+.hero-image-contianer {
+  height: 65vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image {
+  background-image: url("../../images/mike_jules_hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 80%;
+}
