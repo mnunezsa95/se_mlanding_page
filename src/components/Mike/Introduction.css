@@ -1,0 +1,35 @@
+.introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+.introduction__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.introduction__title {
+  font-size: 65px;
+  margin: 0;
+  font-family: "Alegreya";
+}
+
+.introduction__text-container {
+  max-width: 600px;
+}
+
+.introduction__text {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.introduction__image {
+  width: 50vw;
+  height: auto;
+  border-radius: 50%;
+  background-color: rgb(245, 242, 242);
+}

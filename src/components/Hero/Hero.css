@@ -1,14 +1,41 @@
-.hero-image-contianer {
-  height: 65vh;
+.hero__contianer {
+  height: 75vh;
   width: 100%;
   display: flex;
   justify-content: center;
+  gap: 0;
+}
+
+.hero__sub-container {
+  align-content: center;
+}
+
+.hero__title {
+  font-family: "Alegreya";
+  font-size: 70px;
+  max-width: 500px;
+}
+
+.hero__buttons {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.hero__button {
+  background-color: transparent;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  flex: 1;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .hero-image {
-  background-image: url("../../images/mike_jules_hero.png");
+  background-image: url("../../images/mike-jules-hero.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 80%;
+  width: 55%;
 }

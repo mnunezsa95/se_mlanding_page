@@ -13,7 +13,6 @@ const Carousel = ({ items, visibleItemsCount = 3 }) => {
   const prevSlide = () => {
     setCurrentIndex((prevIndex) => {
       const newIndex = prevIndex - visibleItemsCount;
-      // Wrap around to the end if the new index is less than 0
       return newIndex < 0 ? len - (-newIndex % len) : newIndex;
     });
   };
