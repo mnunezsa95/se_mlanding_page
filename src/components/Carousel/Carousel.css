@@ -1,4 +1,12 @@
 .carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.carousel__container {
   background-color: #f3f5f8;
   max-width: 85%;
   width: 100%;
@@ -8,11 +16,12 @@
 }
 
 .carousel__title {
-  font-size: 45px;
+  font-size: 50px;
   font-family: "Alegreya";
   text-align: center;
   padding-top: 50px;
   margin: 0;
+  padding-bottom: 30px;
 }
 
 .carousel__track {

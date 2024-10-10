@@ -26,11 +26,11 @@ const Carousel = ({ items, visibleItemsCount = 3 }) => {
   };
 
   return (
-    <>
-      <div className="carousel">
-        <h2 className="carousel__title">
-          Don&apos;t take our word for it, see what our customers have to say!
-        </h2>
+    <section className="carousel">
+      <h2 className="carousel__title">
+        Don&apos;t take our word for it, see what our customers have to say!
+      </h2>
+      <div className="carousel__container">
         <div className="carousel__track">
           {getVisibleItems().map((item, index) => (
             <div key={index} className="carousel__slide">
@@ -51,7 +51,7 @@ const Carousel = ({ items, visibleItemsCount = 3 }) => {
           &#9654;
         </button>
       </div>
-    </>
+    </section>
   );
 };
 
