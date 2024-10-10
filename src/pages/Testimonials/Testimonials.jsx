@@ -1,5 +1,5 @@
 import Header from "../../components/Header/Header";
-import Carousel from "../../components/carousel/Carousel";
+import Carousel from "../../components/Testimonials/TestimonialCarousel";
 
 const pageOneItems = [
   {
