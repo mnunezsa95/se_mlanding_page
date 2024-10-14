@@ -33,7 +33,7 @@
 }
 
 .hero-image {
-  background-image: url("../../images/mike-jules-hero.png");
+  background-image: url("../../../public/images/mike-jules-hero.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

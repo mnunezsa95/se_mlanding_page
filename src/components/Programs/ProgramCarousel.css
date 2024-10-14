@@ -25,8 +25,8 @@
   background: white;
   border: 1px solid #ddd;
   border-radius: 25px;
-  padding: 20px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 24px 24px 35px 24px;
+  box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.7);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -36,16 +36,16 @@
 }
 
 .program-item-title {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin: 0 0 5px;
   font-family: "Alegreya";
   flex-shrink: 0;
 }
 
 .program-item-text {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin: 0;
-  flex-grow: 1; /* Allow the text to take available space */
+  flex-grow: 1;
   display: flex;
   align-items: center;
 }
@@ -74,7 +74,7 @@
 }
 
 .program-video-button {
-  font-size: 1rem;
+  font-size: 1.2rem;
   background-color: #007bff;
   color: white;
   border: none;

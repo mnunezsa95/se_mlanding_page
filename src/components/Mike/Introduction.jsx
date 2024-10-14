@@ -1,5 +1,5 @@
 import "./Introduction.css"; // Optional: for any custom styles
-import mikeImage from "../../images/mike-jules-press-conf.png";
+import mikeImage from "../../../public/images/mike-jules-press-conf.png";
 
 const Introduction = () => {
   return (

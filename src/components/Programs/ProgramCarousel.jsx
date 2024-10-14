@@ -1,32 +1,36 @@
 import "./ProgramCarousel.css";
+import cardioImage from "../../../public/images/cardio.svg";
+import martialArtsImage from "../../../public/images/martial-arts.svg";
+import selfDefenseImage from "../../../public/images/self-defense.svg";
+import weightBarImage from "../../../public/images/weight-bar.svg";
 
 const programs = [
   {
     title: "Cardio Training",
     description:
       "Fitness training that you'll enjoy and results you'll love even more",
-    picture: null,
+    picture: cardioImage,
     videoUrl: "/videos/jump-roping.mp4",
   },
   {
     title: "Martial Arts",
     description:
       "Boxing, kickboxing, grappling and more to help you get fit and learn",
-    picture: null,
+    picture: martialArtsImage,
     videoUrl: "/videos/martial-arts.mp4",
   },
   {
     title: "Self Defense",
     description:
       "A short description of the service and how the visitor will benefit from it.",
-    picture: null,
+    picture: selfDefenseImage,
     videoUrl: "/videos/self-defense.mp4",
   },
   {
     title: "Weight Training",
     description:
       "A short description of the service and how the visitor will benefit from it.",
-    picture: null,
+    picture: weightBarImage,
     videoUrl: "/videos/training-session.mp4",
   },
 ];
