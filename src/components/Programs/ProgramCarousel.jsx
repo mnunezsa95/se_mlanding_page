@@ -1,4 +1,6 @@
 import "./ProgramCarousel.css";
+import ProgramModal from "./ProgramModal";
+import { useState } from "react";
 import cardioImage from "../../../public/images/cardio.svg";
 import martialArtsImage from "../../../public/images/martial-arts.svg";
 import selfDefenseImage from "../../../public/images/self-defense.svg";
@@ -35,8 +37,20 @@ const programs = [
   },
 ];
 
-// ProgramCarousel Component
 const ProgramCarousel = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedProgram, setSelectedProgram] = useState(null);
+
+  const handleButtonClick = (program) => {
+    setSelectedProgram(program);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedProgram(null);
+  };
+
   return (
     <section className="program-container">
       <h2 className="program-title">Custom Programs for your Goals</h2>
@@ -56,12 +70,20 @@ const ProgramCarousel = () => {
                 No image available
               </div>
             )}
-            <button className="program-video-button">
+            <button
+              className="program-video-button"
+              onClick={() => handleButtonClick(program)}
+            >
               Click here to see a short video
             </button>
           </div>
         ))}
       </div>
+      <ProgramModal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        program={selectedProgram}
+      />
     </section>
   );
 };

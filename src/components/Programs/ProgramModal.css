@@ -1,0 +1,68 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 25px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-video-container {
+  width: 100%;
+  position: relative;
+  padding-top: 100%;
+}
+
+.modal-close-button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 20px;
+}
+
+.modal-close-image {
+  width: 20px;
+  background-color: transparent;
+}
+
+.modal-title {
+  font-family: "Alegreya";
+  font-size: 2.3rem;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.modal-text {
+  font-family: "Alegreya";
+  margin: 0;
+  font-size: 1.3rem;
+  padding: 15px 0 20px 0;
+  line-height: 1.2;
+  padding-bottom: 35px;
+}
+
+.modal-video-container video {
+  position: absolute;
+  border-radius: 25px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.6);
+}
